@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hotels </title>
+
+  <link rel="stylesheet" type="text/css" href="/dist/app.css">
+  <% if (env !== 'local') { %>
+  <link rel="stylesheet" type="text/css" href="<%= getAsset('vendor_bower.css') %>">
+  <% } %>
+
+</head>
+<body>
+<div id="root"></div>
+
+<% if (env === 'local') { %>
+  <script type='text/javascript' id="__bs_script__">
+    document.write("<script async src='http://HOST:<%= BS_DEV_PORT %>/browser-sync/browser-sync-client.2.11.2.js'><\/script>".replace("HOST", location.hostname));
+  </script>
+<% } %>
+
+<script src="<%= getAsset('vendor_bower.js') %>"></script>
+<script src="<%= getAsset('vendor_node.js') %>"></script>
+<script src="<%= getAsset('app.js') %>"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "name": "hotelPim",
+  "description": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "codemirror": "^5.13.2",
+    "leaflet": "^0.7.7",
+    "font-awesome": "^4.5.0",
+    "froala-wysiwyg-editor": "^2.2.2",
+    "semantic": "^2.1.8",
+    "jquery": "^2.2.2"
+  },
+  "overrides": {
+    "codemirror": {
+      "main": [
+        "lib/codemirror.js",
+        "lib/codemirror.css",
+        "mode/xml/xml.js"
+      ]
+    },
+    "semantic": {
+      "main": [
+        "dist/semantic.css",
+        "dist/semantic.js"
+      ]
+    }
+  }
+}
