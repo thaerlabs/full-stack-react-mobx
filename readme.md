@@ -1,4 +1,4 @@
-# hotel-pim
+# Full Stack Node + React-Mobx
 
 
 ## Sructure guide
